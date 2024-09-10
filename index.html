@@ -43,10 +43,32 @@
             <section id="information">
                 <P> 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sunt tenetur. Architecto voluptas nihil delectus totam qui quasi quam, cupiditate labore mollitia? Hic et excepturi reprehenderit ad, commodi ab. Commodi?
-                </P> <!-- Modifier le lorem en vrai texte -->
+                </P> 
+                <!-- Modifier le lorem en vrai texte -->
             </section>
-            <!-- TO DO LA PARTIE COMPETENCE -->
-            <section id="competence"></section>
+            <section id="competence">
+                <h2>Mes compétence</h2>
+
+                <p>HTML</p>
+                <div class="barre">
+                    <div id="choix html">80%</div>
+                </div>
+
+                <p>Css</p>
+                <div class="barre">
+                    <div id="choix css">60%</div>
+                </div>
+
+                <p>Javascript</p>
+                <div class="barre">
+                    <div id="choix Javascript">50%</div>
+                </div>
+
+                <p>PHP</p>
+                <div class="barre">
+                    <div id="choix php">35%</div>
+                </div>
+            </section>
             <section id="projet">
                 <h1>Mes anciens projet</h1>
                 <div id="projet_1">
@@ -81,10 +103,40 @@
                 <h2>Me Contacter</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. In deleniti debitis, odit facere, nesciunt atque, quas aspernatur vero reprehenderit laborum doloribus at veritatis itaque. Alias quos maiores ipsa vel debitis?
-                </p> <!-- Changer le lorem en vrai texte -->
-                
+                </p> 
+                <!-- Changer le lorem en vrai texte -->
+                <form action="traitement.php" method="post" enctype="multipart/form-data">
+
+                    <label for="lastname">Nom</label>
+                    <input type="text" name="lastname" maxlength="100" id="lastname" required>
+                    <br>
+
+                    <label for="firstname">Prénom</label>
+                    <input type="text" name="firstname" maxlength="100" id="firstname" required>
+                    <br>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" maxlength="200" required>
+                    <br>
+
+                    <textarea name="avis" id="avis" maxlength="1000" cols="70" rows="10"></textarea>
+
+                    <input type="submit" value="Envoyer">
+                </form>
             </div>
-            <div id="reseaux"></div>
+            <!-- Mettres les logos de liens -->
+            <div id="reseaux">
+                <h2> Mes réseaux sociaux </h2>
+                <a href="https://www.instagram.com">
+                    <img src="images/LOGO_EFREI-WEB_noir.png" alt="Instagram">
+                </a>
+                <a href="https://www.discord.com">
+                    <img src="images/LOGO_EFREI-WEB_noir.png" alt="Discord">
+                </a>
+                <a href="https://www.linkedin.com">
+                    <img src="images/LOGO_EFREI-WEB_noir.png" alt="Linkedin">
+                </a>
+            </div>
         </footer>
     </body>
 </html>
